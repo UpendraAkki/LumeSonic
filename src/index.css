@@ -104,6 +104,21 @@
   .link-hover:hover::after {
     width: 100%;
   }
+
+  /* Interactive cursor styles */
+  .interactive-cursor-active {
+    cursor: none !important;
+  }
+
+  .interactive-cursor-active * {
+    cursor: none !important;
+  }
+
+  .interactive-cursor-active input,
+  .interactive-cursor-active textarea,
+  .interactive-cursor-active select {
+    cursor: text !important;
+  }
 }
 
 .calendar-container .react-calendar {

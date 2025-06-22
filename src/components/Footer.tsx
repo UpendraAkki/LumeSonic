@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Mail, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Mail, Facebook, Instagram, Youtube, Linkedin, Github, Twitter } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -11,44 +11,38 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 relative">
-                <img 
-                  src="/lovable-uploads/8acfad30-aa90-4edd-b779-aafd43058584.png" 
-                  alt="Psycotik Crew Logo" 
-                  className="h-full w-full object-contain" 
-                />
-              </div>
+              <Logo size="small" />
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-500">
-                Psycotik Crew
+                Upendra Gariminti
               </h2>
             </div>
             <p className="text-gray-300 max-w-md">
-              Professional sound and light rental service for events, concerts, and parties. Turning your events into unforgettable experiences.
+              Professional web developer and technical consultant. This portfolio showcases my skills in modern web development, cloud solutions, and technical expertise.
             </p>
             <div className="flex space-x-4 pt-2">
               <a 
-                href="https://instagram.com" 
+                href="https://www.linkedin.com/in/upendra-akki/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Instagram size={20} />
+                <Linkedin size={20} />
               </a>
               <a 
-                href="https://facebook.com/psicptyk.free" 
+                href="https://twitter.com/UpendraAkki" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Facebook size={20} />
+                <Twitter size={20} />
               </a>
               <a 
-                href="https://youtube.com" 
+                href="https://github.com/UpendraAkki" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
               >
-                <Youtube size={20} />
+                <Github size={20} />
               </a>
             </div>
           </div>
@@ -96,7 +90,7 @@ const Footer = () => {
                   to="/booking" 
                   className="text-gray-300 hover:text-green-400 transition-colors"
                 >
-                  Booking
+                  Contact
                 </NavLink>
               </li>
             </ul>
@@ -105,22 +99,33 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-white font-medium mb-4 pb-2 border-b border-green-500/10">
-              Contact Us
+              Contact Me
             </h3>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-500" />
-                <span>psk-services@gmail.com</span>
+                <span>upendra@leadkamp.com</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
-                <Facebook size={16} className="text-green-500" />
+                <Linkedin size={16} className="text-green-500" />
                 <a 
-                  href="https://www.facebook.com/psicptyk.free" 
+                  href="https://www.linkedin.com/in/upendra-akki/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors"
                 >
-                  facebook.com/psicptyk.free
+                  linkedin.com/in/upendra-akki
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 text-gray-300">
+                <Github size={16} className="text-green-500" />
+                <a 
+                  href="https://github.com/UpendraAkki" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400 transition-colors"
+                >
+                  github.com/UpendraAkki
                 </a>
               </li>
             </ul>
@@ -129,7 +134,7 @@ const Footer = () => {
 
         <div className="border-t border-green-500/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Psycotik Crew. All rights reserved.
+            © {new Date().getFullYear()} Upendra Gariminti. This is a portfolio site showcasing my technical skills and expertise. Not for commercial use.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">

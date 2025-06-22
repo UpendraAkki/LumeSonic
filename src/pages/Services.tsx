@@ -106,7 +106,7 @@ const Services = () => {
               to="/booking"
               className="inline-flex items-center bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 btn-glow animate-fade-in animation-delay-200"
             >
-              Book a Service
+              Hire Me
               <MoveRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -215,7 +215,7 @@ const Services = () => {
                 to="/booking"
                 className="bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
               >
-                Book Now
+                Hire Me
                 <MoveRight className="ml-2 h-5 w-5" />
               </Link>
               <Link

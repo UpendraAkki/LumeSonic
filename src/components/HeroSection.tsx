@@ -1,7 +1,7 @@
-
 import React, { useEffect, useRef } from 'react';
-import { MoveRight, Sparkles, Speaker, Music } from 'lucide-react';
+import { MoveRight, Sparkles, Code, Database } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import InteractiveCursor from './InteractiveCursor';
 
 const HeroSection = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -25,6 +25,7 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <InteractiveCursor />
       {/* Background Elements */}
       <div 
         ref={backgroundRef}
@@ -37,10 +38,10 @@ const HeroSection = () => {
       
       {/* Decorative Elements */}
       <div className="absolute top-1/4 left-20 hidden lg:block">
-        <Speaker className="h-12 w-12 text-green-500/30" />
+        <Code className="h-12 w-12 text-green-500/30" />
       </div>
       <div className="absolute bottom-1/4 right-20 hidden lg:block">
-        <Music className="h-16 w-16 text-green-500/30" />
+        <Database className="h-16 w-16 text-green-500/30" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -49,7 +50,7 @@ const HeroSection = () => {
             <div className="flex items-center mb-4">
               <div className="bg-green-500/20 text-green-400 rounded-full px-4 py-1 text-sm font-medium inline-flex items-center">
                 <Sparkles className="h-3.5 w-3.5 mr-1" />
-                Premium Sound & Light Services
+                Full-Stack Web Developer
               </div>
             </div>
             
@@ -67,14 +68,14 @@ const HeroSection = () => {
                 to="/booking"
                 className="bg-green-500 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
               >
-                Book Now
+                Hire Me
                 <MoveRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/services"
                 className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
               >
-                Our Services
+                My Services
               </Link>
             </div>
           </div>

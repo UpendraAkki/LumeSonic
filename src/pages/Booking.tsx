@@ -1,7 +1,6 @@
-
 import React, { useEffect } from "react";
 import BookingCalendar from "@/components/BookingCalendar";
-import { Clock, CheckCircle, Headphones, MoveRight } from "lucide-react";
+import { Clock, CheckCircle, Headphones, MoveRight, Mail, Linkedin, Github, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Booking = () => {
@@ -39,9 +38,9 @@ const Booking = () => {
       <section className="bg-psyco-black-light py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Book Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Get In Touch</h1>
             <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Ready to elevate your event with professional sound and lighting? Use our simple booking process to secure your date.
+              Ready to discuss your next project? I'm available for freelance work, consulting, and full-time opportunities. Let's connect and explore how I can help bring your ideas to life.
             </p>
           </div>
         </div>
@@ -151,25 +150,51 @@ const Booking = () => {
           <div className="glassmorphism p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-white mb-4">Need to Speak With Us Directly?</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Let's Connect Directly</h2>
                 <p className="text-gray-300 mb-6">
-                  If you have specific questions or prefer to discuss your requirements over the phone, our team is here to help.
+                  I'm always open to discussing new opportunities, projects, or simply connecting with fellow professionals. Feel free to reach out through any of these channels.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">+44 123 456 7890</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">booking@psycotikcrew.com</span>
+                    <span className="text-white">upendra@leadkamp.com</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <Clock className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">Mon-Fri: 9am-6pm | Sat: 10am-4pm</span>
+                    <Linkedin className="h-5 w-5 text-psyco-green-DEFAULT" />
+                    <a 
+                      href="https://www.linkedin.com/in/upendra-akki/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-green-400 transition-colors"
+                    >
+                      linkedin.com/in/upendra-akki
+                    </a>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Github className="h-5 w-5 text-psyco-green-DEFAULT" />
+                    <a 
+                      href="https://github.com/UpendraAkki" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-green-400 transition-colors"
+                    >
+                      github.com/UpendraAkki
+                    </a>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <Twitter className="h-5 w-5 text-psyco-green-DEFAULT" />
+                    <a 
+                      href="https://twitter.com/UpendraAkki" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-green-400 transition-colors"
+                    >
+                      @UpendraAkki
+                    </a>
                   </div>
                 </div>
               </div>
@@ -180,8 +205,8 @@ const Booking = () => {
                     <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Emergency Support</h3>
-                    <p className="text-gray-300">24/7 support line for existing bookings</p>
+                    <h3 className="text-lg font-medium text-white mb-1">Available for Hire</h3>
+                    <p className="text-gray-300">Open to freelance projects and full-time opportunities</p>
                   </div>
                 </div>
                 
@@ -190,8 +215,8 @@ const Booking = () => {
                     <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Custom Packages</h3>
-                    <p className="text-gray-300">Speak with our team about bespoke solutions</p>
+                    <h3 className="text-lg font-medium text-white mb-1">Technical Consulting</h3>
+                    <p className="text-gray-300">Expert guidance on web development and cloud solutions</p>
                   </div>
                 </div>
                 
@@ -200,8 +225,8 @@ const Booking = () => {
                     <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Site Visits</h3>
-                    <p className="text-gray-300">Request a venue assessment before your event</p>
+                    <h3 className="text-lg font-medium text-white mb-1">Quick Response</h3>
+                    <p className="text-gray-300">I typically respond to inquiries within 24 hours</p>
                   </div>
                 </div>
               </div>
@@ -268,22 +293,8 @@ const Phone = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const Mail = ({ className }: { className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width="24" 
-    height="24" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <rect width="20" height="16" x="2" y="4" rx="2" />
-    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-  </svg>
-);
+
+
+
 
 export default Booking;
