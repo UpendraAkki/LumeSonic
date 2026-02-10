@@ -11,6 +11,8 @@ The app is built with **React + TypeScript + Vite**, styled with **Tailwind CSS*
 
 - **Video demo**: [`YouTube – LumeSonic Walkthrough`](https://youtu.be/ki7MArFSt-I)
 
+- **Live site:** [https://lumesonic.pages.dev/](https://lumesonic.pages.dev/)
+
 ---
 
 ### Screenshots
